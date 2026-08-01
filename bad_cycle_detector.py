@@ -25,13 +25,13 @@ def run_experiment_v2():
     ]
 
     WINDOW_SIZE = 4
-    ENTAILMENT_THRESHOLD = 0.65  # Soglia del 65% di probabilità
+    ENTAILMENT_THRESHOLD = 0.65  #Soglia probabilità che le istruzioni siano identiche
     history = []
 
     # Mappatura standard delle classi per DeBERTa NLI
     # Classi: 0 -> Contradiction, 1 -> Entailment, 2 -> Neutral
     
-    print("\n--- AVPIO MONITORAGGIO CON ANALISI SCIENTIFICA DEI SCORE ---")
+    print("\n--- AVVIO MONITORAGGIO CON ANALISI SCIENTIFICA DEI SCORE ---")
 
     for step_num, raw_step in enumerate(agent_trace, 1):
         clean_current = clean_action(raw_step)
